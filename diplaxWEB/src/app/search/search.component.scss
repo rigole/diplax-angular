@@ -1,0 +1,28 @@
+$primary_color: #451F5C;
+$orange: #E13F26;
+
+#contain-header{
+  position: relative;
+  height: 60px;
+  display: block;
+  #first{
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #B3B3B3;
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 20px;
+    mat-icon{
+      font-size: 17px;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  #second{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 10px;
+  }
+}

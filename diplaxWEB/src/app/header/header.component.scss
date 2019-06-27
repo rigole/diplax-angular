@@ -1,0 +1,26 @@
+$primary_color: #451F5C;
+$orange: #E13F26;
+
+#menu{
+  height: 100%;
+}
+
+mat-toolbar{
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  mat-toolbar-row{
+    background: $primary_color;
+  }
+  #way{
+    color: $orange;
+  }
+  #version{
+    font-size: 10px;
+    margin: 8px;
+    position: relative;
+    top: 2px;
+  }
+}
+

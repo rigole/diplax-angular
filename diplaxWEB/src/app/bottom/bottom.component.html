@@ -1,0 +1,24 @@
+<div class="container-fluid" style="padding: 0;margin: 0;">
+  <mat-drawer-container class="example-container">
+    <mat-drawer mode="side" [opened]="open" id="menu">Drawer content</mat-drawer>
+    <mat-drawer-content>
+      <mat-toolbar color="primary">
+        <mat-toolbar-row>
+          <button (click)="toggle()" mat-icon-button>
+            <mat-icon>{{icoButton}}</mat-icon>
+          </button>
+          <span><span id="way">Way</span>Finding<span id="version">1.0</span></span>
+        </mat-toolbar-row>
+      </mat-toolbar>
+      <app-search></app-search>
+      <div class="container-fluid" id="content-page">
+        <div class="row">
+          <app-menu class="col-2"></app-menu>
+          <app-school class="col-7"></app-school>
+        </div>
+      </div>
+    </mat-drawer-content>
+  </mat-drawer-container>
+
+</div>
+

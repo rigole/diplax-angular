@@ -1,0 +1,21 @@
+<div class="container-fluid card">
+  <div class="row" id="contain-header">
+      <span id="first" class="col-7"><mat-icon>brightness_high</mat-icon>Configuration > user</span>
+
+      <span id="second" class="col-2">
+      <button mat-button [matMenuTriggerFor]="animals"><mat-icon>swap_vert</mat-icon></button>
+      <mat-menu #animals="matMenu">
+        <button mat-menu-item>Vertebrates</button>
+        <button mat-menu-item>Invertebrates</button>
+      </mat-menu>
+      <mat-form-field class="example-form-field">
+        <label>
+          <input matInput type="text" placeholder="Rechercher..." [(ngModel)]="value">
+        </label>
+        <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="clear()">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+    </span>
+  </div>
+</div>
