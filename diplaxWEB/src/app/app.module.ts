@@ -23,6 +23,8 @@ import { SchoolComponent } from './school/school.component';
 import { BottomComponent } from './bottom/bottom.component';
 import {MatSortModule} from '@angular/material/sort';
 import { FooterComponent } from './footer/footer.component';
+import {MatGridListModule}  from '@angular/material/grid-list';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 
 
@@ -40,7 +42,8 @@ import { FooterComponent } from './footer/footer.component';
     MenuComponent,
     SchoolComponent,
     BottomComponent,
-    FooterComponent
+    FooterComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
@@ -61,6 +64,7 @@ import { FooterComponent } from './footer/footer.component';
     MatListModule,
     NgbModule,
     MatSortModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

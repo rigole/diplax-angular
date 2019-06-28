@@ -4,6 +4,10 @@ $orange: #E13F26;
 #menu{
   height: 100%;
 }
+mat-icon{
+
+  margin-right: 14px;
+}
 
 mat-toolbar{
   position: relative;
@@ -22,5 +26,17 @@ mat-toolbar{
     position: relative;
     top: 2px;
   }
-}
 
+}
+mat-drawer{
+
+  width: 20%;
+
+}
+#compte{
+
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color:gray;
+
+}

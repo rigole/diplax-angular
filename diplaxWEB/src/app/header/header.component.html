@@ -1,6 +1,24 @@
 <div class="container-fluid" style="padding: 0;margin: 0;">
-  <mat-drawer-container class="" style="background: none;">
-    <mat-drawer mode="side" [opened]="open" id="menu">Drawer content</mat-drawer>
+  <mat-drawer-container class="tg" style="background: none;">
+    <mat-drawer mode="side" [opened]="open" id="menu">
+
+
+
+       <mat-nav-list>
+
+         <a mat-list-item [routerLink]="nav.route"  *ngFor="let nav of  fillerNav">
+           <mat-icon>{{nav.icon}}</mat-icon>
+             {{nav.name}}</a>
+
+              <mat-nav-list id="compte">
+                <a mat-list-item [routerLink]="nav.route"  *ngFor="let nav of  fillerNav2">
+                    <mat-icon>{{nav.icon}}</mat-icon>
+                    {{nav.name}}</a>
+               </mat-nav-list>
+       </mat-nav-list>
+
+
+    </mat-drawer>
     <mat-drawer-content>
       <mat-toolbar color="primary">
         <mat-toolbar-row>
@@ -8,8 +26,13 @@
             <mat-icon>{{icoButton}}</mat-icon>
           </button>
           <span><span id="way">Way</span>Finding<span id="version">1.0</span></span>
+
         </mat-toolbar-row>
       </mat-toolbar>
+
+
+
+
       <app-search></app-search>
       <div class="container-fluid" id="content-page">
           <div class="row">
